@@ -1,0 +1,55 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 9px;
+    overflow: hidden;
+}
+.content {
+  max-width: 320px;
+}
+.content img {
+  max-width: 320px;
+}
+.product-detail {
+  display: flex;
+  gap: 2em;
+  max-width: 267px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.product-detail .product-name {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+}
+.product-detail .product-title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
