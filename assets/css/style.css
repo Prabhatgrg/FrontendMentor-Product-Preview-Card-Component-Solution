@@ -89,6 +89,13 @@ button {
 }
 
 @media (min-width: 768px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+  }
   .content {
     display: flex;
     max-width: 652px;
@@ -103,7 +110,7 @@ button {
     height: 518px;
   }
   .product-detail{
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0 30px;
   }
 }
