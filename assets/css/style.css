@@ -1,6 +1,5 @@
-@import url("https://fonts.google.com/specimen/Montserrat");
-@import url("https://fonts.google.com/specimen/Fraunces");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@200;300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,37 +12,95 @@ body {
 .wrapper {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
-.container{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 9px;
-    overflow: hidden;
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 9px;
+  overflow: hidden;
 }
 .content {
-  max-width: 320px;
+  max-width: 400px;
 }
 .content img {
-  max-width: 320px;
+  max-width: 350px;
+}
+.content .desktop-img{
+  display: none;
 }
 .product-detail {
   display: flex;
-  gap: 2em;
-  max-width: 267px;
+  gap: 1em;
+  max-width: 296px;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 .product-detail .product-name {
+  margin-top: 20px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   letter-spacing: 4px;
   color: hsl(228, 12%, 48%);
 }
 .product-detail .product-title {
   font-family: "Fraunces", sans-serif;
+  line-height: 1;
+}
+.product-detail .product-description {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.7em;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.product-price .main-price {
+  font-size: 2em;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+}
+.product-price .prev-price {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+button {
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  max-width: 290px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 @media (min-width: 576px) {
+    .wrapper{
+        display: inherit;
+    }
+    .content{
+      display: flex;
+    }
+    .content .mobile-img{
+      display: none;
+    }
+    .content .desktop-img{
+      display: inherit;
+    }
 }
 @media (min-width: 768px) {
 }
